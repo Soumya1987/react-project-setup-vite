@@ -5,6 +5,8 @@ import './App.css'
 function App() {
   const testData = useContext(apiContext)
   console.log('testData', testData)
+  // no need to useEffect if context values changes, react automatically rerenders the component
+  //no need to use a useEfect and define a state and update the state to re render here
 
   return (
     <div>
